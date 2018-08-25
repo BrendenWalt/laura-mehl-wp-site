@@ -1,0 +1,237 @@
+
+/*  GLOBAL STYLES */
+/* ================================= */
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/*  NAV STYLES */
+/* ================================= */
+#site-nav {
+  position: absolute;
+  top: 0;
+}
+
+#site-nav ul {
+  margin: 0;
+}
+#site-nav li {
+  display: inline-block;
+}
+#site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*  HOME STYLES */
+/* ================================= */
+#home {
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+.info {
+  color: #ffffff;
+}
+
+/* ABOUT STYLES */
+/* ================================= */
+.about-img img {
+  display: block;
+  width: 100%;
+}
+.about-text-container {
+  background-color: #6602bd;
+}
+.about-text {
+  background-color: #6602bd;
+  color: #ffffff;
+  padding: 35px 5%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 481px) {
+  #about {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #about div {
+    flex: 50%;
+  }
+  #about .about-img {
+    /* flex: 30%; */
+  }
+  .about-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-text-container {
+    display: flex;
+    align-items: center;
+  }
+  .about-text {
+    padding: 30px 20% 35px;;
+  }
+}
+
+/* GALLERY STYLES */
+/* ================================= */
+.gallery-container {
+  margin: 0px auto;
+  max-width: 1400px;
+  width: 90%;
+}
+.gallery-item img{
+  border-radius: 10px;
+  display: block;
+  height: 200px;
+  margin: 10px 0;
+  object-fit: cover;
+  width: 100%;
+}
+#gallery {
+  background-color: #f7f7f7;
+  padding: 35px 0;
+}
+
+@media only screen and (min-width: 481px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-item {
+    margin: 0 5px;
+    flex: 1 0 22%;
+  }
+  .gallery-item img {
+    height: auto;
+  }
+}
+
+/* RESUME 
+==================================== */
+#resume .title {
+  text-align: center;
+}
+
+.resume-school .logo img {
+  display: block;
+  margin: 0 auto;
+}
+.resume-school .school-info {
+  text-align: center;
+}
+.resume-container .contact button {
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 481px){
+  .resume-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .resume-school,
+  .resume-container .contact {
+    flex: 1 100%;
+  }
+}
+/* Social Media
+==================================== */
+.diagonal-border {
+  position: relative;
+  width: 100%; 
+  height: 95px;
+  margin-bottom: 45px;
+}
+.diagonal-border::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.diagonal-border::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #7453EE;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+#social-media {
+  background-color: #7453EE;
+  padding: 0px 0 45px;
+}
+.social-handle {
+  color: #ffffff;
+  text-decoration: none;
+}
+.social-info {
+  margin: 0 auto;
+  text-align: center;
+}
+.social-info img {
+  display: block;
+  margin: 0 auto;
+}
+/* .social-handle img {
+  margin: 0 auto;
+} */
+#social-media .title {
+  color: #ffffff;
+  text-align: center;
+}
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 481px) {
+  .social-media-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+  .social-wrapper {
+    width: 48%;
+  }
+}
+
+/* FOOTER STYLES
+================================ */
+footer {
+  background-color: #5a5a5a;
+  padding: 25px 0;
+}
+#footer .copyright {
+  color: #ffffff;
+  text-align: center;
+}
+#footer .name {
+  color: #ffffff;
+  text-align: center
+}
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px auto;
+}
+.social-container .social {
+  margin: 0 12px;
+}
