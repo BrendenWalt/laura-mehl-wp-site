@@ -39,13 +39,17 @@ div {
 #site-nav {
   position: absolute;
   top: 0;
+  width: 100%;
 }
 
 #site-nav ul {
-  margin: 0;
+  /* margin: 25px auto 0 5%; */
+  margin-left: 6%;
+  padding-left: 0;
 }
 #site-nav li {
   display: inline-block;
+  margin: 0 35px;
 }
 #site-nav a {
   color: #ffffff;
