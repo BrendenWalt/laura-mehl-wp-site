@@ -34,10 +34,9 @@ div {
 }
 
 
-/*  NAV STYLES */
-/* ================================= */
-#site-nav {
-}
+/*  NAV STYLES  
+================================= */
+
 
 #site-nav ul {
   padding-left:0;
@@ -65,19 +64,13 @@ div {
   }
 }
 
-/* TEMP
-================ */
-@media only screen and (max-width: 480px) {
-  #site-nav {
-    display: none;
-  }
-}
+
 
 /*  HOME STYLES */
 /* ================================= */
 #home {
   background-color: #000000;
-  padding: 40px 3% 25px;
+  padding: 0px 3% 0px;
 }
 .home-content-container {
   align-items: center;
@@ -245,28 +238,7 @@ div {
   color: #ffffff;
   text-transform: uppercase;
 }
-.resume-school {
-  align-items: center;
-  color: #616161;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 45px 0;
-}
-.resume-school .logo {
-  margin: 0 auto 15px;
-}
-.resume-school .logo img {
-  display: block;
-  margin: 0 auto;
-}
-.resume-school .school-info {
-  text-align: center;
-}
-.resume-school p {
-  font-style: italic;
-  font-weight: 300;
-}
+
 .resume-category {
   margin: 0 auto 45px;
   width: 90%;
@@ -307,6 +279,28 @@ div {
   line-height: 1.5em;
   margin: 0;
   color: #616161;
+}
+.resume-school {
+  align-items: center;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 0 60px;
+}
+.resume-school .logo {
+  margin: 0 auto 15px;
+}
+.resume-school .logo img {
+  display: block;
+  margin: 0 auto;
+}
+.resume-school .school-info {
+  text-align: center;
+}
+.resume-school p {
+  font-style: italic;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 481px) {
@@ -428,6 +422,7 @@ div {
   
 }
 
+
 /* CONTACT FORM STYLES
 ================================ */
 #contact {
@@ -439,12 +434,30 @@ div {
   padding: 55px 0;
 }
 
+/* BACK TO Top
+================================ */
+#toTop {
+  top: -50px;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  background-color: #50C5B7;
+  border-radius: 50px;
+  margin-right: 4%;
+  position: absolute;
+  text-align:center;
+}
+#toTop a  {
+  line-height: 95px;
+}
+
 
 /* FOOTER STYLES
 ================================ */
 footer {
   background-color: #5a5a5a;
   padding: 25px 0;
+  position: relative;
 }
 #footer .copyright {
   color: #ffffff;
@@ -460,7 +473,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 25px auto;
+  margin: 0px auto;
 }
 .foot-social-container .social {
   margin: 0 12px;
