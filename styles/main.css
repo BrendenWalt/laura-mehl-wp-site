@@ -495,10 +495,13 @@ p {
   position: absolute;
   text-align:center;
 }
+#toTop:hover {
+  cursor: pointer;
+}
 #toTop i  {
   color: #ffffff;
   font-size: 35px;
-  line-height: 71px;
+  line-height: 74px;
 }
 
 
