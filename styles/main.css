@@ -119,6 +119,7 @@ p {
 }
 .site-info-container{
   text-align: center;
+  margin: 35px 0;
   width: 100%;
 }
 .social-container {
@@ -258,6 +259,10 @@ p {
 #resume {
   padding: 50px 0;
   text-align: center;
+}
+#resume .logo img {
+  width: 100%;
+  max-width: 400px;
 }
 
 #resume .title-container {
@@ -490,7 +495,9 @@ p {
   position: absolute;
   text-align:center;
 }
-#toTop a  {
+#toTop i  {
+  color: #ffffff;
+  font-size: 35px;
   line-height: 71px;
 }
 
